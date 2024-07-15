@@ -40,6 +40,7 @@ button:hover {
   background-color: var(--color-1);
   border-radius: 10px;
   width: 48%;
+  box-shadow: 0 4px 10px var(--color-1);
 }
 
 .backdrop {

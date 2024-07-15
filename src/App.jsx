@@ -8,12 +8,17 @@ import Backdrop from "./backdrop.jsx";
 function App() {
   const [isHidden, setIsHidden] = useState(false);
 
+  function toggleBackdrop() {
+    setIsHidden(!isHidden);
+    print(isHidden);
+  }
+
   return (
     <>
-      <Backdrop />
+      {isHidden && <Backdrop />}
       <section className="player-naming-section">
-        <PlayerNamingCard />
-        <PlayerNamingCard />
+        <PlayerNamingCard toggleBackdrop={toggleBackdrop} />
+        <PlayerNamingCard toggleBackdrop={toggleBackdrop} />
       </section>
     </>
   );
