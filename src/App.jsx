@@ -17,10 +17,18 @@ function App() {
   return (
     <>
       {isHidden && <Backdrop toggleBackdrop={toggleBackdrop} />}
-      {isHidden && <PlayerRenamingCard />}
+      {isHidden && <PlayerRenamingCard toggleBackdrop={toggleBackdrop} />}
       <section className="player-naming-section">
-        <PlayerNamingCard toggleBackdrop={toggleBackdrop} />
-        <PlayerNamingCard toggleBackdrop={toggleBackdrop} />
+        <PlayerNamingCard
+          toggleBackdrop={toggleBackdrop}
+          playerName={"Player-1"}
+          symbol={"X"}
+        />
+        <PlayerNamingCard
+          toggleBackdrop={toggleBackdrop}
+          playerName={"Player-2"}
+          symbol={"O"}
+        />
       </section>
     </>
   );
