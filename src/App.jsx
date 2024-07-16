@@ -9,10 +9,7 @@ import PlayerRenamingCard from "./player-renaming-card.jsx";
 function App() {
   const [isHidden, setIsHidden] = useState(false);
 
-  let toggleBackdrop = () => {
-    setIsHidden(!isHidden);
-    console.log(isHidden);
-  };
+  let toggleBackdrop = () => setIsHidden((isHidden) => !isHidden);
 
   return (
     <>
