@@ -53,24 +53,24 @@ button:hover {
   background-color: rgba(51, 48, 48, 0.9);
 }
 
-.backdrop .player-renaming-card {
+.player-renaming-card {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   background-color: var(--color-3);
   text-align: center;
   width: 60%;
-  margin: 0 auto;
+  left: 20%;
+  right: 20%;
   padding: 20px;
-  top: 20%;
   border-radius: 10px;
   box-shadow: 0 4px 10px var(--color-2);
 }
-.backdrop h3 {
+.player-renaming-card h3 {
   margin: 10px;
   color: var(--color-1);
 }
-.backdrop input {
+.player-renaming-card input {
   border-radius: 5px;
   height: 40px;
   padding: 10px;
